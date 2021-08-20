@@ -1,0 +1,112 @@
+#content-separator {
+    min-height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #D1CECE;
+    padding-top: 30px;
+}
+
+#articles {
+    padding: 30px 0;
+}
+
+#big-post-img {
+    width: 60%;
+    flex-grow: 2;
+    padding-right: 40px;
+}
+
+#primary-container {
+    display: flex;
+    flex-direction: row;
+    height: 45%;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+#secondary-container {
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 30px;
+    
+}
+
+#page-container {
+    padding: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.secondary-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+    height: 100%;
+}
+
+.secondary-desc {
+    font-size: 14px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 200px;
+    padding-top: 25px;
+}
+
+.avatar {
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 20px;
+}
+
+.footer > div {
+    flex-grow: 2;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+h2, h3, h4 {
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    margin-top: 10px;
+}
+
+.secondary-content > h3 {
+    padding-top: 15px;
+}
+
+p {
+    font-family: Merriweather;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}

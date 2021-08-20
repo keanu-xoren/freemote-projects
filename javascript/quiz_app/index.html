@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Quiz</title>
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>eCommerce Quiz</h1>
+    <h2 class="question-counter"></h2>
+    <div class="question-container">
+        <div class="question-body question-active">
+            <p class="prompt">Which of the following is not a real eCommerce platform?</p>
+            <div class="answer-container">
+                <input type="radio" id="q1a1" name="answer1" value="0"/>
+                <label for="q1a1">Shopify</label>
+            </div>
+            <div class="answer-container">
+                <input type="radio" id="q1a2" name="answer1" value="0"/>
+                <label for="q1a2">WooCommerce</label>
+            </div>
+            <div class="answer-container">
+                <input type="radio" id="q1a3" name="answer1" value="1" class="correct-answer"/>
+                <label for="q1a3">ShopCommerce</label>
+            </div>
+            <div class="answer-container">
+                <input type="radio" id="q1a4" name="answer1" value="0"/>
+                <label for="q1a4">BigCommerce</label>
+            </div>
+            <!--input type="submit" value="Next"-->
+        </div>
+        <div class="question-body">
+            <p class="prompt">If Shopify is so good, why are Shopify developers necessary?</p>
+            <div class="answer-container">
+                <input type="radio" id="q2a1" name="answer2" value="0"/>
+                <label for="q2a1">To save time on things like store setups and migrations</label>
+            </div>
+            <div class="answer-container">
+                <input type="radio" id="q2a2" name="answer2" value="0"/>
+                <label for="q2a2">To extend the limited design options and functionalities of themes with custom code</label>
+            </div>
+            <div class="answer-container">
+                <input type="radio" id="q2a3" name="answer2" value="0"/>
+                <label for="q2a3">To provide support with a deep understanding of how the platform works and what its limitations are</label>
+            </div>
+            <div class="answer-container">
+                <input type="radio" id="q2a4" name="answer2" value="1" class="correct-answer"/>
+                <label for="q2a4">All of the above</label>
+            </div>
+            <!--input type="submit" value="Next"-->
+        </div>
+        <div class="question-body">
+            <p class="prompt">Which of the following is true about Shopify developers?</p>
+            <div class="answer-container">
+                <input type="radio" id="q3a1" name="answer3" value="0"/>
+                <label for="q3a1">They are paid extremely well</label>
+            </div>
+            <div class="answer-container">
+                <input type="radio" id="q3a2" name="answer3" value="0"/>
+                <label for="q3a2">There is a high demand for them</label>
+            </div>
+            <div class="answer-container">
+                <input type="radio" id="q3a3" name="answer3" value="0"/>
+                <label for="q3a3">They need to know web development, the platform itself, and the liquid template language</label>
+            </div>
+            <div class="answer-container">
+                <input type="radio" id="q3a4" name="answer3" value="1" class="correct-answer"/>
+                <label for="q3a4">All of the above</label>            
+            </div>
+            <!--input type="submit" value="Submit"-->
+        </div>
+        <button class="previous-button">Previous</button>
+        <button class="submit-button">Next</button>
+    </div>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

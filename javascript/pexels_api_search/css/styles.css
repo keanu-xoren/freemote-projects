@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+    height: 100%;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff
+}
+
+form {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    height: 35px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+input[type="submit"] {
+    border: none;
+    width: 35px;
+    height: 35px;
+    padding: 4px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: center / 80% url('https://image.flaticon.com/icons/png/512/46/46389.png');
+    background-repeat: no-repeat;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+p {
+    width: 100%;
+}
+
+p > span {
+    font-weight: 600;
+}
+
+.upper-container {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: bottom / 155% url("https://images.pexels.com/photos/3780104/pexels-photo-3780104.png");
+    background-repeat: no-repeat;
+    transition: 0.5s ease all;
+}
+
+.upper-toolbar {
+    height: 40px;
+    padding: 10px;
+    width: 95%;
+}
+
+.query-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 150px;
+}
+
+.lower-container {
+    min-height: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results-tab-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.results-tab {
+    max-width: 300px;
+    flex-grow: 1;
+    padding: 10px 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.2s ease all;
+}
+
+.results-tab:hover {
+    color: #4040ff;
+    background-color: #4040ff0d;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.results-tab-selected {
+    color: #4040ff;
+    border-bottom: 2px solid #4040ff;
+    transition: 0.2s ease all;
+}
+
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 90%;
+    padding: 10px 30px;
+}
+
+.result-img{
+    margin: 15px 0;
+    box-sizing: content-box;
+    max-width: 45%;
+    transition: 0.3s ease all;
+}
+
+.result-video {
+    height: 220px;
+    width: 220px;
+    margin: 10px;
+    box-sizing: content-box;
+}
+
+@media screen and (min-width: 900px) {
+
+    .upper-container {
+        background: top / 100% url("https://images.pexels.com/photos/3780104/pexels-photo-3780104.png");
+        transition: 0.5s ease all;
+    }
+    
+    .results-container {
+        width: 900px;
+    }
+
+    .result-img {
+        max-width: 280px;
+    }
+
+    .result-video {
+        height: 270px;
+        width: 270px;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+    
+    .results-container {
+        width: 1300px;
+    }
+
+    .result-img {
+        max-width: 400px;
+    }
+
+    .result-video {
+        height: 310px;
+        width: 310px;
+    }
+
+}

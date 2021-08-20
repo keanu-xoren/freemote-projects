@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+h1:after, h2:after {
+    content: ' ☑️';
+    color: blue;
+}
+
+p {
+    color: #8f8f8f;
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-right: 12px;
+}
+
+p > span {
+    font-weight: 700;
+    color: #000;
+}
+
+.profile-container {
+    width: 60%;
+    border: 1px solid #c3c3c3;
+    border-top: none;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 4px;
+}
+
+.header-container {
+    display: flex;
+}
+
+.back-button {
+    width: 50px;
+    height: 50px;
+    margin-right: 40px;
+    margin-left: 10px;
+    background-color: #3faaff;
+    background: center / 30% url("https://image.flaticon.com/icons/png/512/271/271218.png");
+    background-repeat: no-repeat;
+    filter: invert(57%) sepia(30%) saturate(1115%) hue-rotate(170deg) brightness(99%) contrast(106%);
+    border-radius: 50%;
+    transition: 0.3s ease all;
+}
+
+.back-button:hover {
+    cursor: pointer;
+    background-color: #00000050;
+    transition: 0.3s ease all;
+}
+
+.cover-container {
+    height: 230px;
+    position: relative;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.follow-button {
+    align-self: flex-end;
+    padding: 8px;
+    color: #3faaff;
+    border: 3px solid #3faaff;
+    background-color: #ffffff;
+    border-radius: 18px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 14px 20px;
+    width: 100px;
+    transition: 0.3s ease all;
+}
+
+.follow-button:hover {
+    cursor: pointer;
+    background: #3faaff10;
+    transition: 0.3s ease all;
+}
+
+.currently-following {
+    color: #ffffff;
+    background-color: #3faaff;
+    transition: 0.3s ease all;
+}
+
+.currently-following:hover {
+    color: #ffffff;
+    background-color: #d85050;
+    border: 3px solid #d85050;
+    transition: 0.3s ease all;
+}
+
+.tweet-display-container {
+    min-height: 200px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.tweet-tab {
+    width: 30px;
+    height: 100%;
+    flex-grow: 1;
+    padding: 10px 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.2s ease all;
+}
+
+.tweet-tab:hover {
+    color: #3faaff;
+    background-color: #3faaff3d;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.tweet-tab-selected {
+    color: #3faaff;
+    border-bottom: 2px solid #3faaff;
+}
+
+.tweet {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #c3c3c3;
+}
+
+.tweet > img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+
+.tweet-header > p {
+    padding: 0;
+}
+
+.tweet-content {
+    color: #000000;
+    font-size: 18px;
+    text-align: start;
+}
+
+#follower-numbers {
+    display: flex;
+}

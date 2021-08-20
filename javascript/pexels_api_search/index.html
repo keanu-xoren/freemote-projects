@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pexels Search</title>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="upper-container">
+        <div class="upper-toolbar">
+            <a href="https://www.pexels.com">
+                <img src="https://images.pexels.com/lib/api/pexels-white.png" />
+            </a>
+        </div>
+        <div class="query-container">
+            <h1>The best free stock photos & videos shared by talented creators.</h1>
+            <form id="query-form">
+                <input type="text" placeholder="Search for free photos and videos" id='query-text'/>
+                <input type="submit" value='' id='query-submit'/>
+            </form>
+            <p><span>Suggested: </span>animals, giraffe, fashion, mountains, more</p>
+        </div>
+    </div>
+    <div class="lower-container">
+        <div class="results-tab-container">
+            <div class="results-tab results-tab-selected" id=photos>Photos</div>
+            <div class="results-tab" id=videos>Videos</div>
+        </div>
+        <a href="https://www.pexels.com">Results provided by Pexels</a>
+        <div class="results-container">
+            <!-- dynamic rendering -->
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#upper-container {
+    display: flex;
+    align-items: flex-start;
+    height: 600px;
+    max-width: 750px;
+    margin: 65px 0;
+}
+
+#ig-preview {
+    width: 0;
+    height: 0;
+}
+
+#main-container {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#login-container {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#logo {
+    width: 75%;
+    height: 120px;
+    margin-bottom: -10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 30%;
+    box-sizing: content-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form > input {
+    width: 100%;
+    border-radius: 3px;
+    margin: 3px 0;
+}
+
+input[type="text"], input[type=password] {
+    background-color: #F9F9F9;
+    border: 1px solid #B2B2B2;
+    height: 30%;
+}
+
+input[type="submit"] {
+    background-color: #008cff;;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 10px;
+    height: 25%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#or-container {
+    width: 75%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.separator {
+    height: 1px;
+    background-color: #a4a2b2;
+    flex-grow: 1;
+}
+
+#or {
+    margin: 8px;
+    color: #7c7c7c;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #2427b6;
+}
+
+#fb-container {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#fb-icon {
+    height: 20px;
+    width: 20px;
+    padding: 0 10px;
+}
+
+#forgot-pw {
+    font-size: 12px;
+}
+
+#signup-container {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+#sign-up-link {
+    color: #008cff;
+    font-weight: 500;
+}
+
+#app-download-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app-download-container > p {
+    flex-basis: 5;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+#app-download-container img {
+    height: 40px;
+}
+
+#footer-container {
+    width: 80%;
+    font-size: 12px;
+    color: #7c7c7c;
+    padding-bottom: 45px;
+}
+
+#footer-link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.footer-link {
+    font-size: 12px;
+    color: #7c7c7c;
+    margin: 2px 6px;
+}
+
+#lang-and-copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+select {
+    border: none;
+    background: none;
+    margin: 0 20px;
+}
+
+@media screen and (min-width: 450px) {
+
+    body {
+        background-color: #EFEFEF;
+    }
+
+    #login-container {
+        border: 1px solid #B2B2B2;
+    }
+
+    #signup-container {
+        border: 1px solid #B2B2B2;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    #upper-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #ig-preview {
+        width: 325px;
+        height: 100%;
+    }
+
+    #main-container {
+        margin-left: 30px;
+    }
+
+}

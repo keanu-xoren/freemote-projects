@@ -1,0 +1,4 @@
+*.DS_Store
+*feedback.txt
+*secrets
+*secrets/*
